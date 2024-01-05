@@ -1,0 +1,7 @@
+1.0.0:
+    - "Init of jaxwilko.game"
+    - v1.0.0/create_levels_table.php
+    - v1.0.0/create_items_table.php
+    - v1.0.0/create_loot_tables_table.php
+    - v1.0.0/create_quests_table.php
+    - v1.0.0/seed_demo_data.php

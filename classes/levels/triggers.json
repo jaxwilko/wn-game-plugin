@@ -1,0 +1,15 @@
+{
+    "level": [
+        [0, 0],
+        [300, 100]
+    ],
+    "layers": {
+        "3": [
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Modules\\World\\Objects\\Triggers\\Fire",
+                "vector": [225, 25],
+                "size": [50, 50]
+            }
+        ]
+    }
+}

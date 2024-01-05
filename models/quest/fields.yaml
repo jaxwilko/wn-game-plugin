@@ -1,0 +1,60 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    code:
+        label: 'jaxwilko.game::lang.models.general.code'
+        type: text
+        span: full
+
+tabs:
+    fields:
+        data[title]:
+            label: 'Quest Title'
+            type: text
+            span: auto
+            tab: 'Quest Settings'
+        data[description]:
+            label: 'Description'
+            type: text
+            span: auto
+            tab: 'Quest Settings'
+        data[prerequisite]:
+            label: 'Prerequisite'
+            type: repeater
+            span: left
+            tab: 'Quest Settings'
+            form:
+                fields:
+                    quest:
+                        label: 'Quest Code'
+                        type: text
+                        span: full
+        data[reward]:
+            label: 'Reward'
+            type: repeater
+            span: right
+            tab: 'Quest Settings'
+            form:
+                fields:
+                    code:
+                        label: 'Item Code'
+                        type: text
+                        span: auto
+                    quantity:
+                        label: 'Quantity'
+                        type: number
+                        span: auto
+        data[completion]:
+            label: 'Completion'
+            type: codeeditor
+            lang: php
+            span: full
+            tab: 'Quest Settings'
+            comment: 'Arguments: JaxWilko\Game\Classes\Engine\Modules\Player\Player $player'
+        data[repeatable]:
+            label: 'Repeatable'
+            type: switch
+            span: full
+            tab: 'Quest Settings'

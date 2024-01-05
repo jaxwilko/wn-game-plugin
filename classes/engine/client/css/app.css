@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* width */
+    .chat-panel::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    .chat-panel::-webkit-scrollbar-track {
+        background: rgba(98, 104, 114, 0.84);
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    .chat-panel::-webkit-scrollbar-thumb {
+        background: rgba(69, 71, 76, 0.84);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Handle on hover */
+    .chat-panel::-webkit-scrollbar-thumb:hover {
+        background: rgba(69, 71, 76, 0.95);
+    }
+}

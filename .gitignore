@@ -1,0 +1,8 @@
+/assets/*.js
+/assets/*.css
+/assets/*.txt
+/formwidgets/leveleditor/assets/dist
+
+/mix.webpack.js
+/node_modules
+/.phpunit.result.cache

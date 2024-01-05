@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    code:
+        label: 'jaxwilko.game::lang.models.general.code'
+        searchable: true
+    created_at:
+        label: 'jaxwilko.game::lang.models.general.created_at'
+        type: datetime
+        searchable: true
+        sortable: true
+        invisible: true
+    updated_at:
+        label: 'jaxwilko.game::lang.models.general.updated_at'
+        type: datetime
+        searchable: true
+        sortable: true

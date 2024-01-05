@@ -1,0 +1,32 @@
+{
+    "level": {
+        "size": [
+            [0, 0],
+            [400, 400]
+        ]
+    },
+    "layers": {
+        "0": [
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Objects\\Backgrounds\\Grass",
+                "vector": [18, 18],
+                "size": [64, 64]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Objects\\Backgrounds\\Grass",
+                "vector": [82, 18],
+                "size": [64, 64]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Objects\\Backgrounds\\Grass",
+                "vector": [18, 82],
+                "size": [64, 64]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Objects\\Backgrounds\\Grass",
+                "vector": [82, 82],
+                "size": [64, 64]
+            }
+        ]
+    }
+}

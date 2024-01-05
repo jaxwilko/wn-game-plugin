@@ -1,0 +1,50 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: 'jaxwilko.game::lang.models.general.name'
+        type: text
+        span: left
+        required: true
+
+    code@create:
+        label: 'jaxwilko.game::lang.models.general.code'
+        type: text
+        span: right
+        required: true
+        preset:
+            type: slug
+            field: name
+    code:
+        label: 'jaxwilko.game::lang.models.general.code'
+        type: text
+        context: [ update, preview ]
+        required: true
+        span: right
+
+    form_toolbar:
+        type: partial
+        span: full
+
+secondaryTabs:
+    icons:
+        'Level': 'icon-map-location-dot'
+
+    stretch: true
+    paneCssClass:
+        'Level': 'padded-pane'
+
+    fields:
+        is_active:
+            label: 'jaxwilko.game::lang.models.general.is_active'
+            type: switch
+            span: full
+            default: 1
+            tab: Level
+        data:
+            label: ''
+            type: leveleditor
+            tab: Level
+

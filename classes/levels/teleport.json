@@ -1,0 +1,30 @@
+{
+    "name": "Teleport Test",
+    "background": "#89C46E",
+    "void": "#181818",
+    "level": {
+        "size": [
+            [0, 0],
+            [300, 300]
+        ]
+    },
+    "layers": {
+        "3": [
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Triggers\\Teleport",
+                "vector": [200, 200],
+                "size": [50, 50],
+                "settings": {
+                    "target": "10,10"
+                }
+            }
+        ],
+        "5": [
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Entities\\Zombie",
+                "vector": [250, 100],
+                "size": [20, 20]
+            }
+        ]
+    }
+}

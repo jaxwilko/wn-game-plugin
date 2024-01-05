@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'jaxwilko.game::lang.models.level.label'
+
+# Model Form Field configuration
+form: $/jaxwilko/game/models/level/fields.yaml
+
+# Model Class name
+modelClass: JaxWilko\Game\Models\Level
+
+# Default redirect location
+defaultRedirect: jaxwilko/game/levels
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: jaxwilko/game/levels/update/:id
+    redirectClose: jaxwilko/game/levels
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: jaxwilko/game/levels
+    redirectClose: jaxwilko/game/levels
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

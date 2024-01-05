@@ -1,0 +1,46 @@
+{
+    "background": "#89C46E",
+    "void": "#181818",
+    "level": {
+        "size": [
+            [0, 0],
+            [400, 150]
+        ]
+    },
+    "layers": {
+        "1": [
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Generic\\GenericStaticWorldObject",
+                "vector": [49, 0],
+                "size": [2, 80]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Generic\\GenericStaticWorldObject",
+                "vector": [119, 70],
+                "size": [2, 80]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Generic\\GenericStaticWorldObject",
+                "vector": [189, 0],
+                "size": [2, 80]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Generic\\GenericStaticWorldObject",
+                "vector": [259, 70],
+                "size": [2, 80]
+            },
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Engine\\Core\\Objects\\Generic\\GenericStaticWorldObject",
+                "vector": [329, 0],
+                "size": [2, 80]
+            }
+        ],
+        "5": [
+            {
+                "class": "\\JaxWilko\\Game\\Classes\\Objects\\Entities\\Zombie",
+                "vector": [360, 40],
+                "size": [32, 64]
+            }
+        ]
+    }
+}

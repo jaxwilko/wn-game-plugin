@@ -1,0 +1,65 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    code:
+        label: 'jaxwilko.game::lang.models.general.code'
+        type: text
+        span: full
+
+tabs:
+    fields:
+        data[label]:
+            label: 'Label'
+            type: text
+            span: auto
+            tab: 'Item Settings'
+        data[description]:
+            label: 'Description'
+            type: text
+            span: auto
+            tab: 'Item Settings'
+        data[size]:
+            label: 'Size'
+            type: text
+            span: auto
+            placeholder: '24,24'
+            tab: 'Item Settings'
+        data[icon]:
+            label: icon
+            comment: Icons should be 42x42px
+            type: mediafinder
+            span: auto
+            tab: 'Item Settings'
+        data[spriteMap]:
+            label: 'Sprite Map'
+            type: repeater
+            span: full
+            tab: 'Item Settings'
+            form:
+                fields:
+                    state:
+                        label: 'Animation state'
+                        type: text
+                        span: auto
+                    sheet:
+                        label: 'Sprite Sheet'
+                        type: mediafinder
+                        span: auto
+                    align:
+                        label: 'Align'
+                        type: text
+                        span: auto
+                        placeholder: '24,24'
+                    delay:
+                        label: 'Frame delay'
+                        type: number
+                        span: auto
+        data[usage]:
+            label: 'Usage'
+            type: codeeditor
+            lang: php
+            span: full
+            tab: 'Item Settings'
+            comment: 'Arguments: JaxWilko\Game\Classes\Engine\Core\Objects\Entities\Entity $entity'

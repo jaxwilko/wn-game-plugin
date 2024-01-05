@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'jaxwilko.game::lang.models.quest.label'
+
+# Model Form Field configuration
+form: $/jaxwilko/game/models/quest/fields.yaml
+
+# Model Class name
+modelClass: JaxWilko\Game\Models\Quest
+
+# Default redirect location
+defaultRedirect: jaxwilko/game/quests
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: jaxwilko/game/quests/update/:id
+    redirectClose: jaxwilko/game/quests
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: jaxwilko/game/quests
+    redirectClose: jaxwilko/game/quests
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

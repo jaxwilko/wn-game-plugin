@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'jaxwilko.game::lang.models.item.label'
+
+# Model Form Field configuration
+form: $/jaxwilko/game/models/item/fields.yaml
+
+# Model Class name
+modelClass: JaxWilko\Game\Models\Item
+
+# Default redirect location
+defaultRedirect: jaxwilko/game/items
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: jaxwilko/game/items/update/:id
+    redirectClose: jaxwilko/game/items
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: jaxwilko/game/items
+    redirectClose: jaxwilko/game/items
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

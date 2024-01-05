@@ -1,0 +1,29 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    code:
+        label: 'jaxwilko.game::lang.models.general.code'
+        type: text
+        span: full
+
+tabs:
+    fields:
+        data:
+            label: ''
+            type: repeater
+            span: full
+            tab: 'Loot Table Settings'
+            form:
+                fields:
+                    code:
+                        label: 'Item Code'
+                        type: text
+                        span: auto
+                    chance:
+                        label: 'Chance'
+                        type: number
+                        placeholder: 0.25
+                        comment: 'Float between 0 and 1'
+                        span: auto

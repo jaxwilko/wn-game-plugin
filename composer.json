@@ -1,0 +1,26 @@
+{
+    "name": "jaxwilko/wn-game-plugin",
+    "type": "winter-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jack Wilkinson",
+            "email": "me@jackwilky.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:josh-gaby/Ratchet.git"
+        }
+    ],
+    "require": {
+        "ext-posix": "*",
+        "ext-pcntl": "*",
+        "ext-sockets": "*",
+        "predis/predis": "^2.1",
+        "cboden/ratchet": "dev-master",
+        "jaxwilko/weird-php": "^0.0",
+        "winter/wn-user-plugin": "^2.2"
+    }
+}

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'jaxwilko.game::lang.models.loottable.label'
+
+# Model Form Field configuration
+form: $/jaxwilko/game/models/loottable/fields.yaml
+
+# Model Class name
+modelClass: JaxWilko\Game\Models\LootTable
+
+# Default redirect location
+defaultRedirect: jaxwilko/game/loottables
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: jaxwilko/game/loottables/update/:id
+    redirectClose: jaxwilko/game/loottables
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: jaxwilko/game/loottables
+    redirectClose: jaxwilko/game/loottables
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
