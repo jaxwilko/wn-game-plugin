@@ -28,7 +28,7 @@ effect). Source code here: [github.com/jaxwilko/website](https://github.com/jaxw
 So I now have a kinda cool rendering system for 2D canvas drawing, what else can I do with this thing, I thought...
 
 ## Creating a game engine vs creating a game
-Years ago I worked with a very experienced game dev at an e-commerce shop, a very good quote of hers I remember well was
+Years ago I worked with a very experienced game dev at an e-commerce shop. A very good quote of hers I remember well was
 > "If you're going to build a game, use a game engine. If you want to build a game engine, you will never make a game"
 
 This stayed with me over the years and when I finally got around to this project I decided I was not building a game.
@@ -44,8 +44,8 @@ while (!$exit) {
     sendToUser($result);
 }
 ```
-Because I already had a JS rendering system I thought why not do this in JS, unfortunately I no longer have the code
-for this, but it looked something like:
+Because I already had a JS rendering system I thought why not do this in JS? Unfortunately I no longer have the code
+for that version of the engine, but it looked something like:
 ```
 engine/
     rendering/
@@ -64,13 +64,16 @@ start again with a Server <=> Client model.
 Could I have done this in JS? Yeah, but that wouldn't be as fun a challenge.
 
 ## Writing a game engine in PHP
-PHP was not written for this, but it's a very versatile language so why not? To start with, we should define some
-concepts.
+PHP was not written for this, it's a templating language... Well it used to be, modern PHP is a very versatile language
+offering some really neat features. So why can't you run a game on PHP? This sounded like a challenge to me and, not one
+to be afraid of a challenge, accepted.
+
+To start with, we should define some concepts.
 - `Client` - The end user's browser and the code executed within it.
 - `Server` - The game server running the PHP code.
 - `Levels` - An object that contains `WorldObject`s
 
-### Why a game engine in a CMS
+### Why a game engine in a CMS?
 Laravel is awesome. Winter CMS is Laravel with extra steps to make your life easier. Creating a game engine is a lot of
 work and being able to build it on top of features, such as the backend form system and the `Winter.User` auth system,
 saved so much time and effort.
@@ -617,3 +620,15 @@ code and via the editor.
 ## Conclusion
 So, can you build a game engine in PHP, in a CMS? Yes. Should you? Probably not, unless you're looking for a challenge
 and then yeah go for it!
+
+During this project I learned a great many things about the internal workings of PHP, how to improve application
+performance with worker threads, how to daemonize processes in PHP, and a great many other things.
+
+My favourite part of the project was working on [`WeirdPHP`](https://github.com/jaxwilko/weird-php). `Weird` allows you
+to do some really cool things like processing data across workers, or generate multiple images all in parallel. It will
+be exciting to see what other uses cases it has and to improve support for custom worker processes.
+
+I really hope that people will try out the engine and attempt to make their own games with it, it would be soo cool to
+see people having fun with this project.
+
+What's next? Maybe add in that third dimension...
