@@ -37,32 +37,32 @@ class Npc extends AiActor implements HasInventoryInterface
 
     protected array $spriteMap = [
         'idle' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/dude/idle.png',
+            'sheet' => '/storage/app/media/game/dude/idle.png',
             'align' => [32, 64],
             'delay' => 45
         ],
         'attack' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/dude/attack.png',
+            'sheet' => '/storage/app/media/game/dude/attack.png',
             'align' => [32, 64],
             'delay' => 10
         ],
         'down' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/dude/walk-down.png',
+            'sheet' => '/storage/app/media/game/dude/walk-down.png',
             'align' => [32, 64],
             'delay' => 15
         ],
         'up' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/dude/walk-up.png',
+            'sheet' => '/storage/app/media/game/dude/walk-up.png',
             'align' => [32, 64],
             'delay' => 15
         ],
         'left' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/dude/walk-left.png',
+            'sheet' => '/storage/app/media/game/dude/walk-left.png',
             'align' => [32, 64],
             'delay' => 15
         ],
         'right' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/dude/walk-right.png',
+            'sheet' => '/storage/app/media/game/dude/walk-right.png',
             'align' => [32, 64],
             'delay' => 15
         ],

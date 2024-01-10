@@ -112,11 +112,11 @@ class Plugin extends PluginBase
                 'value' => 1,
                 'size' => [24, 24],
                 // icon 42x42
-                'icon' => '/plugins/jaxwilko/game/classes/engine/assets/gold/icon.png',
+                'icon' => '/storage/app/media/game/gold/icon.png',
                 'spriteMap' => [
                     'idle' => [
                         // sprite 24x24 (probably keep 16x16 with border)
-                        'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/gold/gold.png',
+                        'sheet' => '/storage/app/media/game/gold/gold.png',
                         'align' => [24, 24],
                         'delay' => 20
                     ],

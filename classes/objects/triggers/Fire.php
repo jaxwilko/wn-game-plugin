@@ -13,7 +13,7 @@ class Fire extends StaticTriggerObject
 
     protected array $spriteMap = [
         'idle' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/fire.png',
+            'sheet' => '/storage/app/media/game/fire.png',
             'align' => 64,
             'delay' => 10
         ]

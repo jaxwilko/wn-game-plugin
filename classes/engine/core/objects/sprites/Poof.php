@@ -13,7 +13,7 @@ class Poof extends StaticSpriteObject
 
     protected array $spriteMap = [
         'idle' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/poof.png',
+            'sheet' => '/storage/app/media/game/poof.png',
             'align' => 64,
             'delay' => 3
         ]

@@ -28,32 +28,32 @@ class Zombie extends AiActor
 
     protected array $spriteMap = [
         'idle' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/zombie/idle.png',
+            'sheet' => '/storage/app/media/game/zombie/idle.png',
             'align' => [32, 64],
             'delay' => 45
         ],
         'attack' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/zombie/attack.png',
+            'sheet' => '/storage/app/media/game/zombie/attack.png',
             'align' => [32, 64],
             'delay' => 10
         ],
         'down' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/zombie/walk-down.png',
+            'sheet' => '/storage/app/media/game/zombie/walk-down.png',
             'align' => [32, 64],
             'delay' => 15
         ],
         'up' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/zombie/walk-up.png',
+            'sheet' => '/storage/app/media/game/zombie/walk-up.png',
             'align' => [32, 64],
             'delay' => 15
         ],
         'left' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/zombie/walk-left.png',
+            'sheet' => '/storage/app/media/game/zombie/walk-left.png',
             'align' => [32, 64],
             'delay' => 15
         ],
         'right' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/zombie/walk-right.png',
+            'sheet' => '/storage/app/media/game/zombie/walk-right.png',
             'align' => [32, 64],
             'delay' => 15
         ],

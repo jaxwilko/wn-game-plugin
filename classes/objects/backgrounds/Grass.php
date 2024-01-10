@@ -9,7 +9,7 @@ class Grass extends StaticWorldObject
 {
     protected array $spriteMap = [
         'idle' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/grass.png',
+            'sheet' => '/storage/app/media/game/grass.png',
             'align' => 64,
             'delay' => 50
         ]

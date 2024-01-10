@@ -12,7 +12,7 @@ class Spawner extends StaticTriggerObject
 {
     protected array $spriteMap = [
         'idle' => [
-            'sheet' => '/plugins/jaxwilko/game/classes/engine/assets/portal.png',
+            'sheet' => '/storage/app/media/game/portal.png',
             'align' => 64,
             'delay' => 15
         ]
