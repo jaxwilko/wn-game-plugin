@@ -20,11 +20,11 @@
             </template>
         </Window>
 
-        <Window v-for="container in containers" :title="container.containerName" top="500" left="15" width="300" max-width="300" height="280" max-height="280">
+        <Window v-for="container in containers" :title="container.containerName" top="500" left="15" width="300" max-width="300" height="300" max-height="300">
             <Inventory :id="container.id" :items="container.inventory"></Inventory>
         </Window>
 
-        <Window title="Inventory" :top="inventoryDefault" left="15" width="300" max-width="300" height="280" max-height="280">
+        <Window title="Inventory" :top="inventoryDefault" left="15" width="300" max-width="300" height="300" max-height="300">
             <Inventory id="player" :items="inventory"></Inventory>
         </Window>
     </div>
@@ -45,7 +45,7 @@ export default {
     computed: {
         inventoryDefault: {
             get() {
-                return document.body.clientHeight - 295;
+                return window.innerHeight - 315;
             }
         }
     },

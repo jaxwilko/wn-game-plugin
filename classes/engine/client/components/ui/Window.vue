@@ -1,11 +1,10 @@
 <template>
     <div
         ref="window"
-        v-on:DOMAttrModified="console.log(e)"
          class="absolute bg-gray-500/70 overflow-auto rounded-md shadow-lg"
          :style="(
              folded
-                 ? `height: 34px; width: ${windowWidth}px; resize: horizontal;`
+                 ? `height: 44px; width: ${windowWidth}px; resize: horizontal;`
                  : `height: ${windowHeight}px; width: ${windowWidth}px; resize: both; min-height: 130px;`
              ) + ` top: ${windowTop}px; left: ${windowLeft}px;`
              + (maxHeight ? `max-height: ${maxHeight}px;` : '')
@@ -74,7 +73,7 @@ export default {
                 this.windowHeight = e[0].contentRect.height;
             }
 
-            this.windowWidth = e[0].contentRect.width;
+            this.windowWidth = Math.max(e[0].contentRect.width, this.windowWidth);
         }
     },
     mounted() {
