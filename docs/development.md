@@ -473,7 +473,7 @@ would not be okay.
 Luckily for us, adding custom `FormWidget`s to Winter CMS is really easy! Unluckily creating a level editor is actually
 quite a challenge.
 
-The first step I took was to pull in the rendering library [`canvas.js`](classes/engine/client/src/renderer/canvas.js)
+The first step I took was to pull in the rendering library [`canvas.js`](../classes/engine/client/src/renderer/canvas.js)
 from the client, this meant I could leverage all the work I had done on the client to render a preview of the level
 with minimal effort.
 
