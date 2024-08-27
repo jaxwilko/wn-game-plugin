@@ -52,6 +52,10 @@ See the help page for details:
 php artisan game:serve -h
 ```
 
+## Demo
+
+If you would like to run a local demo, [check out this repo](https://github.com/jaxwilko/winter-game-demo).
+
 ## Why?
 I thought it would be funny and nobody stopped me, for more see [development notes](./docs/development.md).
 
