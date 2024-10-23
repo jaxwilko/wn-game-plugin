@@ -118,7 +118,7 @@ class Player extends Actor
 
         parent::__construct($vector, $size, $health);
 
-        $this->speed = 2;
+        $this->speed = 1;
     }
 
     /**

@@ -70,6 +70,21 @@ export default class Engine
 
         this.statusUpdate(true);
 
+        const localTick = () => {
+            if (this.network.socketIsOpen() && this.controls.hasInput()) {
+                this.lastHadInput = true;
+                this.network.queue("controls", this.controls.active);
+            }
+
+            if (!this.controls.hasInput() && this.lastHadInput) {
+                this.lastHadInput = false;
+                this.network.queue("controls", this.controls.active);
+            }
+
+            this.network.dispatchQueue();
+        };
+
+
         const tick = () => {
             if (this.stop) {
                 return;
@@ -85,29 +100,19 @@ export default class Engine
 
             this.ticks.local[time]++;
 
-            if (this.network.socketIsOpen() && this.controls.hasInput()) {
-                this.lastHadInput = true;
-                this.network.queue("controls", this.controls.active);
-            }
-
-            if (!this.controls.hasInput() && this.lastHadInput) {
-                this.lastHadInput = false;
-                this.network.queue("controls", this.controls.active);
-            }
-
             if (this.state) {
                 if (this.state?.player?.settings?.camera?.vector) {
                     this.camera.adjust(this.state.player.settings.camera.vector);
                 }
             }
 
-            this.network.dispatchQueue();
             this.events.fire("tick", this);
             this.render();
 
             window.requestAnimationFrame(tick);
         };
 
+        this.localTickInterval = setInterval(localTick, (1/128) * 1000);
         window.requestAnimationFrame(tick);
     }
 
