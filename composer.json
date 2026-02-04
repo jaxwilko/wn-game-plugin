@@ -19,7 +19,7 @@
         "ext-pcntl": "*",
         "ext-sockets": "*",
         "predis/predis": "^2.1",
-        "cboden/ratchet": "dev-master",
+        "cboden/ratchet": "*",
         "jaxwilko/weird-php": "^0.0",
         "winter/wn-user-plugin": "^2.2"
     }
